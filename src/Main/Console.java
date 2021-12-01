@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Console {
 
 	private static final String URL_PAGE = "https://www.w3.org/";
-	private static final String wordRegex = "[[ ]*|[,]*|[)]*|[(]*|[\"]*|[;]*|[-]*|[:]*|[']*|[’]*|[\\.]*|[:]*|[/]*|[!]*|[?]*|[+]*]+";
+	private static final String wordRegex = "[[ ]*|[,]*|[)]*|[(]*|[\"]*|[;]*|[-]*|[:]*|[']*|[â€™]*|[\\.]*|[:]*|[/]*|[!]*|[?]*|[+]*]+";
 	
 	public static void main(String [] args) throws IOException {
 		
@@ -39,6 +39,7 @@ public class Console {
 			System.out.println("Please enter a word you want to search: ");
 			
 			search_word = sc.next();
+			//String comparison: word compared with all crawled files
 			if(!search_word.equals(null)) {
 				String [] index = search_word.split(wordRegex);
 				
