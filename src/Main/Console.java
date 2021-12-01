@@ -59,7 +59,7 @@ public class Console {
 						
 						//Stores all the links in HashMap
 						for (String url : webpages) {
-							
+							//Word Frequency count of the searched word
 							unsortedLinks.put(url, PageRank.WordFrequency(url, search_word));
 						}
 						//To sort the links according to frequency of the word in a page
